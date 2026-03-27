@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – STRIDE Lab</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+<div class="stripe">
+  <div style="background:#1a3a5c"></div><div style="background:#1a4f2a"></div>
+  <div style="background:#d4991a"></div><div style="background:#c0392b"></div>
+</div>
+
+<section style="background:var(--navy);padding:3.5rem 0 3rem;">
+  <div class="container">
+    <div class="section-label" style="color:var(--gold);">Get in touch</div>
+    <h1 style="color:#fff;margin-bottom:10px;">Contact</h1>
+    <p style="color:rgba(255,255,255,0.65);max-width:500px;font-size:14.5px;line-height:1.75;">
+      Whether you're interested in collaboration, applying to the lab,
+      discussing research, or scheduling a meeting — we'd love to hear from you.
+    </p>
+  </div>
+</section>
+
+<section class="section" style="background:var(--light);">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Contact Info -->
+      <div>
+        <div class="section-label" style="margin-bottom:1.5rem;">Reach out</div>
+
+        <div class="contact-info-item">
+          <div class="contact-icon">📧</div>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value">
+              <a href="mailto:jaimini@umich.edu" style="color:var(--navy);">jaimini@umich.edu</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="contact-label">Office</div>
+            <div class="contact-value">
+              Dept. of Computer &amp; Information Science<br>
+              University of Michigan – Dearborn<br>
+              Dearborn, MI 48128
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-icon">📅</div>
+          <div>
+            <div class="contact-label">Office Hours / Meetings</div>
+            <div class="contact-value">
+              <a href="https://calendar.app.google/fCMfwbvf52rAZshK8" target="_blank"
+                 style="color:var(--navy);font-weight:600;">
+                Book via Google Calendar →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-icon">🌐</div>
+          <div>
+            <div class="contact-label">Personal Website</div>
+            <div class="contact-value">
+              <a href="https://utkarshani.github.io/" target="_blank" style="color:var(--navy);">utkarshani.github.io</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social links -->
+        <div style="margin-top:2rem;">
+          <div class="contact-label" style="margin-bottom:12px;">Find us online</div>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <a href="https://scholar.google.com" target="_blank"
+               style="display:flex;align-items:center;gap:10px;font-size:14px;color:var(--navy);font-weight:500;text-decoration:none;">
+              <span style="width:32px;height:32px;background:var(--light);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;">📚</span>
+              Google Scholar
+            </a>
+            <a href="https://linkedin.com" target="_blank"
+               style="display:flex;align-items:center;gap:10px;font-size:14px;color:var(--navy);font-weight:500;text-decoration:none;">
+              <span style="width:32px;height:32px;background:var(--light);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;">💼</span>
+              LinkedIn
+            </a>
+            <a href="https://github.com" target="_blank"
+               style="display:flex;align-items:center;gap:10px;font-size:14px;color:var(--navy);font-weight:500;text-decoration:none;">
+              <span style="width:32px;height:32px;background:var(--light);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;">💻</span>
+              GitHub
+            </a>
+            <a href="https://twitter.com" target="_blank"
+               style="display:flex;align-items:center;gap:10px;font-size:14px;color:var(--navy);font-weight:500;text-decoration:none;">
+              <span style="width:32px;height:32px;background:var(--light);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;">🐦</span>
+              X / Twitter
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div>
+        <div class="section-label" style="margin-bottom:1.5rem;">Send a message</div>
+        <div class="card" style="padding:2rem;">
+          <form id="contact-form" onsubmit="handleSubmit(event)">
+
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject / Reason for Contact</label>
+              <select id="subject" name="subject">
+                <option value="">Select a topic…</option>
+                <option>Research collaboration</option>
+                <option>PhD / MS application inquiry</option>
+                <option>Undergraduate research</option>
+                <option>Course / teaching question</option>
+                <option>Media / press inquiry</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about yourself and what you'd like to discuss…" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+              Send Message
+            </button>
+
+            <p id="form-note" style="display:none;margin-top:12px;font-size:13px;color:var(--forest);text-align:center;"></p>
+
+          </form>
+          <p style="margin-top:14px;font-size:12px;color:var(--muted);text-align:center;">
+            Or email directly at <a href="mailto:jaimini@umich.edu" style="color:var(--navy);">jaimini@umich.edu</a>
+          </p>
+        </div>
+
+        <!-- For prospective students -->
+        <div class="card" style="margin-top:16px;border-left:4px solid var(--gold);padding:1.3rem 1.5rem;">
+          <div class="section-label" style="margin-bottom:6px;">Prospective students</div>
+          <p style="font-size:13.5px;color:var(--muted);line-height:1.7;margin-bottom:10px;">
+            If you are applying to UM-Dearborn to work with Dr. Jaimini,
+            please include your CV, a brief research statement, and any
+            relevant publications or projects in your email.
+          </p>
+          <a href="people.html#join" style="font-size:13px;font-weight:600;color:var(--navy);">Read joining guidelines →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    const name    = document.getElementById('name').value;
+    const email   = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value || 'General inquiry';
+    const message = document.getElementById('message').value;
+
+    // Build a mailto link as a simple form action (no server needed for static sites)
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\n${message}`
+    );
+    const mailtoLink = `mailto:jaimini@umich.edu?subject=${encodeURIComponent('[STRIDE Lab Website] ' + subject)}&body=${body}`;
+
+    const note = document.getElementById('form-note');
+    note.style.display = 'block';
+    note.textContent = 'Opening your email client…';
+
+    window.location.href = mailtoLink;
+  }
+</script>
+
+<div id="footer-placeholder"></div>
+<script src="js/components.js"></script>
+<script> renderNav('Contact'); renderFooter(); </script>
+</body>
+</html>

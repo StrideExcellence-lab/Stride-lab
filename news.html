@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News – STRIDE Lab</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+<div class="stripe">
+  <div style="background:#1a3a5c"></div><div style="background:#1a4f2a"></div>
+  <div style="background:#d4991a"></div><div style="background:#c0392b"></div>
+</div>
+
+<section style="background:var(--navy2);padding:3.5rem 0 3rem;">
+  <div class="container">
+    <div class="section-label" style="color:var(--gold);">What's happening</div>
+    <h1 style="color:#fff;">Lab News</h1>
+  </div>
+</section>
+
+<section class="section" style="background:var(--light);">
+  <div class="container" style="max-width:800px;">
+
+    <style>
+      .news-full-item {
+        background: #fff; border-radius: var(--radius); border: 1px solid var(--border);
+        padding: 1.6rem; margin-bottom: 14px;
+        display: grid; grid-template-columns: 72px 1fr; gap: 1.4rem;
+        transition: box-shadow .2s;
+      }
+      .news-full-item:hover { box-shadow: var(--shadow); }
+      .news-date-block { text-align: center; }
+      .news-month { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--gold); }
+      .news-day   { font-size: 2rem; font-weight: 700; color: var(--navy); font-family: 'Playfair Display', serif; line-height: 1; }
+      .news-year  { font-size: 11px; color: var(--muted); }
+      .news-full-title { font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 6px; }
+      .news-full-body  { font-size: 13.5px; color: var(--muted); line-height: 1.7; }
+      .news-tags { margin-top: 10px; display: flex; gap: 6px; flex-wrap: wrap; }
+    </style>
+
+    <div class="news-full-item">
+      <div class="news-date-block">
+        <div class="news-month">Jan</div>
+        <div class="news-day">2025</div>
+      </div>
+      <div>
+        <div class="news-full-title">Podcast Interview on Causal Neuro-Symbolic AI — Data Skeptic</div>
+        <div class="news-full-body">
+          Dr. Jaimini was featured on the Data Skeptic podcast to discuss the
+          CausalNeSy framework, explaining how causal reasoning enhances
+          neural networks for explainability and robustness.
+        </div>
+        <div class="news-tags">
+          <span class="badge badge-green">Talk</span>
+          <a href="https://www.youtube.com/watch?v=cVXSK20y-eg" target="_blank" class="badge badge-gray" style="text-decoration:none;">YouTube →</a>
+          <a href="https://podcasts.apple.com/us/podcast/graphs-for-causal-ai/id890348705?i=1000709692552" target="_blank" class="badge badge-gray" style="text-decoration:none;">Apple Podcast →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="news-full-item">
+      <div class="news-date-block">
+        <div class="news-month">Jan</div>
+        <div class="news-day">2025</div>
+      </div>
+      <div>
+        <div class="news-full-title">1st Workshop on CausalNeSy at ESWC 2025</div>
+        <div class="news-full-body">
+          Dr. Jaimini successfully organized and led the inaugural
+          <em>Causal Neuro-Symbolic AI (CausalNeSy)</em> workshop at ESWC 2025,
+          bringing together researchers from causality, neuro-symbolic AI, and
+          knowledge representation communities.
+        </div>
+        <div class="news-tags">
+          <span class="badge badge-gold">Workshop</span>
+          <a href="https://sites.google.com/view/causalnesy/program" target="_blank" class="badge badge-gray" style="text-decoration:none;">Program →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="news-full-item">
+      <div class="news-date-block">
+        <div class="news-month">Feb</div>
+        <div class="news-day">2025</div>
+      </div>
+      <div>
+        <div class="news-full-title">Tutorial on Multi-agent Co-pilot in Industrial AI at AAMAS 2025</div>
+        <div class="news-full-body">
+          Our tutorial on Multi-agent Co-pilot in Industrial AI Applications
+          was accepted at AAMAS 2025, covering agentic AI workflows for
+          industrial automation scenarios.
+        </div>
+        <div class="news-tags">
+          <span class="badge badge-blue">Tutorial</span>
+          <a href="https://aiisc.ai/tutorials/AAMAS_Tutorial_Multiagent_CoPilot_in_Industrial_AI_Applications/" target="_blank" class="badge badge-gray" style="text-decoration:none;">Details →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="news-full-item">
+      <div class="news-date-block">
+        <div class="news-month">Nov</div>
+        <div class="news-day">2024</div>
+      </div>
+      <div>
+        <div class="news-full-title">Three Papers Accepted at ISWC 2024</div>
+        <div class="news-full-body">
+          A strong showing at ISWC 2024: our work on (1) Root Cause Analysis
+          in Smart Manufacturing, (2) Causal KG for Autonomous Driving, and
+          (3) Visual Causal QA with KG Link Prediction were all accepted across
+          the Industry and Demo/Poster tracks.
+        </div>
+        <div class="news-tags">
+          <span class="badge badge-blue">Publication</span>
+          <span class="badge badge-green">Industry Track</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="news-full-item">
+      <div class="news-date-block">
+        <div class="news-month">Nov</div>
+        <div class="news-day">2024</div>
+      </div>
+      <div>
+        <div class="news-full-title">Presented at 4th Causal Data Science Meeting 2024</div>
+        <div class="news-full-body">
+          Dr. Jaimini presented the CausalNeSy work on Causal Neuro-Symbolic
+          AI for industrial applications at the 4th Causal Data Science Meeting,
+          a premier venue for causal inference research.
+        </div>
+        <div class="news-tags">
+          <span class="badge badge-green">Talk</span>
+          <a href="https://www.causalscience.org/" target="_blank" class="badge badge-gray" style="text-decoration:none;">Event →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="news-full-item">
+      <div class="news-date-block">
+        <div class="news-month">Oct</div>
+        <div class="news-day">2024</div>
+      </div>
+      <div>
+        <div class="news-full-title">Ontology Design Paper Accepted at WOP 2024</div>
+        <div class="news-full-body">
+          Our paper on Ontology Design Metapattern for RelationType Role
+          Composition was accepted at the 15th Workshop on Ontology Design
+          and Patterns, co-located with ISWC 2024.
+        </div>
+        <div class="news-tags">
+          <span class="badge badge-gold">Workshop Paper</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="news-full-item">
+      <div class="news-date-block">
+        <div class="news-month">Jun</div>
+        <div class="news-day">2024</div>
+      </div>
+      <div>
+        <div class="news-full-title">IEEE Intelligent Systems Article Published</div>
+        <div class="news-full-body">
+          Our article <em>Causal Neuro-Symbolic AI: A Synergy Between Causality
+          and Neurosymbolic Methods</em> was published in IEEE Intelligent Systems
+          (Impact Factor: 5.6), one of the premier journals in AI.
+        </div>
+        <div class="news-tags">
+          <span class="badge badge-blue">Journal</span>
+          <a href="https://ieeexplore.ieee.org/document/10570374" target="_blank" class="badge badge-gray" style="text-decoration:none;">IEEE →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="js/components.js"></script>
+<script> renderNav('News'); renderFooter(); </script>
+</body>
+</html>

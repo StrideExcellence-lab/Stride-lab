@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications – STRIDE Lab</title>
+  <meta name="description" content="Publications from STRIDE Lab at University of Michigan-Dearborn." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+<div class="stripe">
+  <div style="background:#1a3a5c"></div><div style="background:#1a4f2a"></div>
+  <div style="background:#d4991a"></div><div style="background:#c0392b"></div>
+</div>
+
+<!-- ── PAGE HEADER ── -->
+<section style="background:var(--navy);padding:3.5rem 0 3rem;">
+  <div class="container">
+    <div class="section-label" style="color:var(--gold);">Scholarly output</div>
+    <h1 style="color:#fff;margin-bottom:10px;">Publications</h1>
+    <p style="color:rgba(255,255,255,0.65);max-width:560px;font-size:14.5px;line-height:1.75;">
+      Peer-reviewed journal articles, conference papers, demos, and workshop
+      contributions from the STRIDE Lab team.
+    </p>
+    <div style="display:flex;gap:12px;margin-top:1.4rem;flex-wrap:wrap;">
+      <a href="https://scholar.google.com" target="_blank" class="btn btn-gold" style="font-size:13px;padding:8px 18px;">Google Scholar</a>
+      <a href="assets/cv.pdf" target="_blank" class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,0.35);font-size:13px;padding:8px 18px;">Full CV</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FILTER BAR ── -->
+<div style="background:#fff;border-bottom:1px solid var(--border);position:sticky;top:62px;z-index:50;">
+  <div class="container" style="padding-top:0.8rem;padding-bottom:0.8rem;display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+    <span style="font-size:12px;font-weight:600;color:var(--muted);margin-right:4px;">Filter:</span>
+    <button class="filter-btn active" onclick="filterPubs('all', this)">All</button>
+    <button class="filter-btn" onclick="filterPubs('journal', this)">Journals</button>
+    <button class="filter-btn" onclick="filterPubs('conference', this)">Conferences</button>
+    <button class="filter-btn" onclick="filterPubs('workshop', this)">Workshops</button>
+    <button class="filter-btn" onclick="filterPubs('demo', this)">Demos</button>
+  </div>
+</div>
+
+<style>
+  .filter-btn {
+    font-size: 12px; font-weight: 600; padding: 5px 14px;
+    border-radius: 20px; border: 1.5px solid var(--border);
+    background: transparent; cursor: pointer; color: var(--muted);
+    font-family: 'DM Sans', sans-serif; transition: all .2s;
+  }
+  .filter-btn:hover { border-color: var(--navy); color: var(--navy); }
+  .filter-btn.active { background: var(--navy); color: #fff; border-color: var(--navy); }
+  .pub-year { font-size: 11px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; color: var(--muted); border-bottom: 1.5px solid var(--border); padding-bottom: 8px; margin: 2.5rem 0 1rem; }
+</style>
+
+<!-- ── PUBLICATIONS LIST ── -->
+<section class="section" style="background:var(--light);">
+  <div class="container">
+
+    <div class="pub-year">2025</div>
+    <div class="pub-list" id="pub-list">
+
+      <div class="pub-item" data-type="workshop">
+        <div>
+          <div class="pub-title">1st Workshop on Causal Neuro-Symbolic AI (CausalNeSy)</div>
+          <div class="pub-authors">U. Jaimini (Organizer)</div>
+          <div class="pub-venue">ESWC 2025 · Workshop</div>
+        </div>
+        <div class="pub-right">
+          <span class="badge badge-gold">Workshop</span>
+          <div class="pub-links">
+            <a href="https://sites.google.com/view/causalnesy/" target="_blank">Website</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-item" data-type="conference">
+        <div>
+          <div class="pub-title">Multi-agent Co-pilot in Industrial AI Applications (Tutorial)</div>
+          <div class="pub-authors">U. Jaimini et al.</div>
+          <div class="pub-venue">AAMAS 2025 · Tutorial</div>
+        </div>
+        <div class="pub-right">
+          <span class="badge badge-blue">Tutorial</span>
+          <div class="pub-links">
+            <a href="https://aiisc.ai/tutorials/AAMAS_Tutorial_Multiagent_CoPilot_in_Industrial_AI_Applications/" target="_blank">Page</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-year">2024</div>
+
+      <div class="pub-item" data-type="journal">
+        <div>
+          <div class="pub-title">Causal Neuro-Symbolic AI: A Synergy Between Causality and Neurosymbolic Methods</div>
+          <div class="pub-authors">U. Jaimini, A. Sheth et al.</div>
+          <div class="pub-venue">IEEE Intelligent Systems · Impact Factor: 5.6</div>
+        </div>
+        <div class="pub-right">
+          <span class="badge badge-blue">Journal</span>
+          <div class="pub-links">
+            <a href="https://ieeexplore.ieee.org/document/10570374" target="_blank">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-item" data-type="conference">
+        <div>
+          <div class="pub-title">Causal Neuro-Symbolic AI for Root Cause Analysis in Smart Manufacturing</div>
+          <div class="pub-authors">U. Jaimini et al.</div>
+          <div class="pub-venue">ISWC 2024 · Industry Track</div>
+        </div>
+        <div class="pub-right">
+          <span class="badge badge-green">Conference</span>
+          <div class="pub-links">
+            <a href="https://ceur-ws.org/Vol-3828/paper45.pdf" target="_blank">PDF</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-item" data-type="conference">
+        <div>
+          <div class="pub-title">Causal Knowledge Graph for Scene Understanding in Autonomous Driving</div>
+          <div class="pub-authors">U. Jaimini et al.</div>
+          <div class="pub-venue">ISWC 2024 · Industry Track</div>
+        </div>
+        <div class="pub-right">
+          <span class="badge badge-green">Conference</span>
+          <div class="pub-links">
+            <a href="https://ceur-ws.org/Vol-3828/paper43.pdf" target="_blank">PDF</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-item" data-type="demo">
+        <div>
+          <div class="pub-title">Visual Causal Question and Answering with Knowledge Graph Link Prediction</div>
+          <div class="pub-authors">U. Jaimini et al.</div>
+          <div class="pub-venue">ISWC 2024 · Poster &amp; Demo</div>
+        </div>
+        <div class="pub-right">
+          <span class="badge badge-gray">Demo</span>
+          <div class="pub-links">
+            <a href="https://ceur-ws.org/Vol-3828/paper28.pdf" target="_blank">PDF</a>
+            <a href="https://youtu.be/Q88IsGsedGo" target="_blank">Video</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-item" data-type="workshop">
+        <div>
+          <div class="pub-title">Ontology Design Metapattern for RelationType Role Composition</div>
+          <div class="pub-authors">U. Jaimini et al.</div>
+          <div class="pub-venue">15th Workshop on Ontology Design &amp; Patterns (WOP) · ISWC 2024</div>
+        </div>
+        <div class="pub-right">
+          <span class="badge badge-gold">Workshop</span>
+          <div class="pub-links">
+            <a href="https://scholarcommons.sc.edu/aii_fac_pub/616/" target="_blank">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-item" data-type="journal">
+        <div>
+          <div class="pub-title">Predicting Health Outcomes for Pediatric Asthma Patients</div>
+          <div class="pub-authors">U. Jaimini et al.</div>
+          <div class="pub-venue">IEEE · 2024</div>
+        </div>
+        <div class="pub-right">
+          <span class="badge badge-blue">Journal</span>
+          <div class="pub-links">
+            <a href="https://ieeexplore.ieee.org/abstract/document/10628667" target="_blank">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-year">2022–2023</div>
+
+      <div class="pub-item" data-type="conference">
+        <div>
+          <div class="pub-title">Root Cause Analysis in Smart Manufacturing with Causal Neuro-Symbolic AI</div>
+          <div class="pub-authors">U. Jaimini et al.</div>
+          <div class="pub-venue">AI Institute, Univ. of South Carolina</div>
+        </div>
+        <div class="pub-right">
+          <span class="badge badge-green">Conference</span>
+          <div class="pub-links">
+            <a href="https://scholarcommons.sc.edu/cgi/viewcontent.cgi?article=1633&context=aii_fac_pub" target="_blank">PDF</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-item" data-type="conference">
+        <div>
+          <div class="pub-title">Enhancing Interoperability in the Industrial Metaverse via Knowledge Graphs</div>
+          <div class="pub-authors">U. Jaimini et al.</div>
+          <div class="pub-venue">IEEE · 2023</div>
+        </div>
+        <div class="pub-right">
+          <span class="badge badge-green">Conference</span>
+          <div class="pub-links">
+            <a href="https://ieeexplore.ieee.org/abstract/document/10018009" target="_blank">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-item" data-type="conference">
+        <div>
+          <div class="pub-title">CausalKG: Causal Knowledge Graph Interoperability and Fusion for Autonomous Driving</div>
+          <div class="pub-authors">U. Jaimini et al. · Industry collaboration with Bosch Center for AI</div>
+          <div class="pub-venue">IEEE · 2022</div>
+        </div>
+        <div class="pub-right">
+          <span class="badge badge-green">Conference</span>
+          <div class="pub-links">
+            <a href="https://ieeexplore.ieee.org/abstract/document/9706608" target="_blank">Paper</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /pub-list -->
+
+    <div style="margin-top:2.5rem;padding:1.5rem;background:#fff;border-radius:var(--radius);border:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
+      <div>
+        <div style="font-weight:600;color:var(--navy);margin-bottom:4px;">See the complete publication list</div>
+        <div style="font-size:13px;color:var(--muted);">Including full citation counts and co-author details.</div>
+      </div>
+      <a href="https://scholar.google.com" target="_blank" class="btn btn-primary">Google Scholar →</a>
+    </div>
+
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="js/components.js"></script>
+<script>
+  renderNav('Publications');
+  renderFooter();
+
+  function filterPubs(type, btn) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.pub-item').forEach(item => {
+      if (type === 'all' || item.dataset.type === type) {
+        item.style.display = '';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+    // Hide/show year headers if all items in a year are hidden
+    document.querySelectorAll('.pub-year').forEach(yr => {
+      const next = yr.nextElementSibling;
+      yr.style.display = (next && next.classList.contains('pub-item') && next.style.display === 'none') ? 'none' : '';
+    });
+  }
+</script>
+</body>
+</html>

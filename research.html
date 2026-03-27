@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research – STRIDE Lab</title>
+  <meta name="description" content="Research projects at STRIDE Lab — Causal Neuro-Symbolic AI, Knowledge Graphs, and AI for Healthcare." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<!-- ── RESEARCH HERO ── -->
+<section class="research-hero">
+  <div class="container">
+    <div class="section-label" style="color:var(--gold);">What we investigate</div>
+    <h1 style="color:#fff;font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:1rem;">
+      Research at <span style="color:var(--gold);">STRIDE Lab</span>
+    </h1>
+    <p style="color:rgba(255,255,255,0.68);max-width:600px;font-size:15px;line-height:1.75;">
+      Our research sits at the intersection of causality, symbolic AI, and
+      deep learning — building AI systems that are not just accurate, but
+      explainable, robust, and aligned with human reasoning.
+    </p>
+  </div>
+</section>
+<div class="stripe">
+  <div style="background:#1a3a5c"></div>
+  <div style="background:#1a4f2a"></div>
+  <div style="background:#d4991a"></div>
+  <div style="background:#c0392b"></div>
+</div>
+
+<!-- ── THEME 1: CausalNeSy ── -->
+<section class="section" id="causalnesy" style="background:#fff;">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;" class="research-two-col">
+
+      <div>
+        <div class="section-label">Core framework</div>
+        <h2 class="section-title">Causal Neuro-Symbolic AI (CausalNeSy)</h2>
+        <p style="color:var(--muted);line-height:1.8;margin-bottom:1.2rem;">
+          CausalNeSy is our flagship framework that embeds causal knowledge
+          into neural systems. Traditional deep learning excels at pattern
+          recognition but struggles with <em>why</em> things happen — CausalNeSy
+          bridges this gap by integrating causal graphs and structural causal
+          models with neural architectures.
+        </p>
+        <p style="color:var(--muted);line-height:1.8;margin-bottom:1.5rem;">
+          This approach enables <strong>counterfactual reasoning</strong>
+          ("what would have happened if…"), <strong>intervention analysis</strong>,
+          and <strong>transparent explanations</strong> — crucial for high-stakes
+          domains like healthcare, manufacturing, and autonomous systems.
+        </p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+          <a href="https://ieeexplore.ieee.org/document/10570374" target="_blank" class="btn btn-primary">IEEE Paper</a>
+          <a href="https://youtu.be/xW50jOdTOAA" target="_blank" class="btn btn-outline">Dissertation Video</a>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div class="card project-card">
+          <h3>Counterfactual Reasoning</h3>
+          <p>Enabling "what-if" queries over learned causal structures, going beyond correlation to understand intervention effects.</p>
+          <div class="project-tags">
+            <span class="badge badge-blue">Causality</span>
+            <span class="badge badge-gray">Deep Learning</span>
+          </div>
+        </div>
+        <div class="card project-card">
+          <h3>Human-in-the-Loop Causal Modeling</h3>
+          <p>Incorporating domain expert knowledge into causal graphs to ground neural models with verified causal structure.</p>
+          <div class="project-tags">
+            <span class="badge badge-green">HITL</span>
+            <span class="badge badge-blue">Causality</span>
+          </div>
+        </div>
+        <div class="card project-card">
+          <h3>Explainable AI via Causal Paths</h3>
+          <p>Generating user-facing explanations grounded in causal pathways rather than post-hoc attribution heuristics.</p>
+          <div class="project-tags">
+            <span class="badge badge-gold">XAI</span>
+            <span class="badge badge-blue">Causality</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── THEME 2: Knowledge Graphs ── -->
+<section class="section" id="kg" style="background:var(--light);">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;" class="research-two-col">
+
+      <div style="display:flex;flex-direction:column;gap:14px;order:2;">
+        <div class="card project-card" style="border-left-color:var(--forest);">
+          <h3>CausalKG — Causal Knowledge Graph</h3>
+          <p>A knowledge graph for autonomous driving that encodes causal relationships between road events, enabling interpretable scene understanding.</p>
+          <div class="project-tags">
+            <span class="badge badge-green">Autonomous Driving</span>
+            <span class="badge badge-blue">KG</span>
+          </div>
+          <div class="pub-links" style="margin-top:10px;">
+            <a href="https://ieeexplore.ieee.org/abstract/document/9706608" target="_blank">Paper</a>
+          </div>
+        </div>
+        <div class="card project-card" style="border-left-color:var(--forest);">
+          <h3>MetaverseKG</h3>
+          <p>An ontology and knowledge graph for industrial metaverse applications, enabling semantic interoperability between digital and physical assets.</p>
+          <div class="project-tags">
+            <span class="badge badge-gold">Industrial AI</span>
+            <span class="badge badge-green">Ontology</span>
+          </div>
+          <div class="pub-links" style="margin-top:10px;">
+            <a href="https://ieeexplore.ieee.org/abstract/document/10018009" target="_blank">Paper</a>
+          </div>
+        </div>
+        <div class="card project-card" style="border-left-color:var(--forest);">
+          <h3>Ontology Design Metapatterns</h3>
+          <p>Novel ontology design patterns for RelationType Role Composition, advancing reusable knowledge engineering practices.</p>
+          <div class="project-tags">
+            <span class="badge badge-green">Ontology</span>
+            <span class="badge badge-gray">WOP 2024</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="order:1;">
+        <div class="section-label">Structured knowledge</div>
+        <h2 class="section-title">Knowledge Graphs &amp; Ontologies</h2>
+        <p style="color:var(--muted);line-height:1.8;margin-bottom:1.2rem;">
+          Knowledge Graphs provide a machine-readable scaffold of facts and
+          relationships that neural models can leverage for more grounded
+          reasoning. At STRIDE Lab, we build domain-specific KGs and
+          ontologies that enable <strong>semantic interoperability</strong>
+          and <strong>causal enrichment</strong> across diverse applications.
+        </p>
+        <p style="color:var(--muted);line-height:1.8;">
+          Our work spans autonomous driving (CausalKG), industrial digital
+          twins (MetaverseKG), and biomedical ontologies — connecting symbolic
+          knowledge to neural inference pipelines.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── THEME 3: Healthcare ── -->
+<section class="section" id="health" style="background:#fff;">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;" class="research-two-col">
+
+      <div>
+        <div class="section-label">Real-world impact</div>
+        <h2 class="section-title">AI for Healthcare</h2>
+        <p style="color:var(--muted);line-height:1.8;margin-bottom:1.2rem;">
+          One of the most critical domains for Causal AI is healthcare —
+          where understanding <em>why</em> a patient's condition changes,
+          not just <em>predicting</em> it, is essential for actionable
+          clinical decision support.
+        </p>
+        <p style="color:var(--muted);line-height:1.8;margin-bottom:1.2rem;">
+          Our work focuses on pediatric asthma prediction, personalized
+          treatment effect modeling, and transparent explanations for
+          black-box clinical models. We align with NIH and NSF priorities
+          around health equity and personalized medicine.
+        </p>
+        <p style="color:var(--muted);line-height:1.8;">
+          Our causal framework enables physicians to ask interventional
+          questions — "if we change medication X, what is the likely
+          outcome for this specific patient?" — a level of reasoning
+          beyond standard predictive models.
+        </p>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div class="card project-card" style="border-left-color:var(--gold);">
+          <h3>Pediatric Asthma Outcome Prediction</h3>
+          <p>Using causal neuro-symbolic models to predict health outcomes and identify intervention opportunities for asthma patients.</p>
+          <div class="project-tags">
+            <span class="badge badge-gold">Healthcare</span>
+            <span class="badge badge-blue">Causality</span>
+          </div>
+          <div class="pub-links" style="margin-top:10px;">
+            <a href="https://ieeexplore.ieee.org/abstract/document/10628667" target="_blank">Paper</a>
+          </div>
+        </div>
+        <div class="card project-card" style="border-left-color:var(--gold);">
+          <h3>Personalized Treatment Effect Modeling</h3>
+          <p>Estimating heterogeneous treatment effects at the individual level — moving clinical AI from population-level to patient-level reasoning.</p>
+          <div class="project-tags">
+            <span class="badge badge-gold">Personalized Medicine</span>
+            <span class="badge badge-blue">Causality</span>
+          </div>
+        </div>
+        <div class="card project-card" style="border-left-color:var(--gold);">
+          <h3>Visual Causal QA with KG Link Prediction</h3>
+          <p>A visual question-answering system that uses causal knowledge graphs to answer complex clinical reasoning queries.</p>
+          <div class="project-tags">
+            <span class="badge badge-green">VQA</span>
+            <span class="badge badge-gold">Healthcare</span>
+          </div>
+          <div class="pub-links" style="margin-top:10px;">
+            <a href="https://ceur-ws.org/Vol-3828/paper28.pdf" target="_blank">PDF</a>
+            <a href="https://youtu.be/Q88IsGsedGo" target="_blank">Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── COLLABORATORS / FUNDING ── -->
+<section class="section" style="background:var(--light);">
+  <div class="container">
+    <div class="section-label">Partnerships</div>
+    <h2 class="section-title">Collaborators &amp; Funding</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;">
+      <div class="card" style="text-align:center;padding:1.8rem;">
+        <div style="font-size:2rem;margin-bottom:10px;">🎓</div>
+        <div style="font-weight:600;color:var(--navy);margin-bottom:4px;">AI Institute, Univ. of South Carolina</div>
+        <div style="font-size:12.5px;color:var(--muted);">PhD training &amp; collaborative research with Dr. Amit Sheth</div>
+      </div>
+      <div class="card" style="text-align:center;padding:1.8rem;">
+        <div style="font-size:2rem;margin-bottom:10px;">🏭</div>
+        <div style="font-weight:600;color:var(--navy);margin-bottom:4px;">Bosch Center for AI</div>
+        <div style="font-size:12.5px;color:var(--muted);">Industry collaboration on CausalKG for autonomous driving</div>
+      </div>
+      <div class="card" style="text-align:center;padding:1.8rem;">
+        <div style="font-size:2rem;margin-bottom:10px;">⚡</div>
+        <div style="font-weight:600;color:var(--navy);margin-bottom:4px;">Siemens</div>
+        <div style="font-size:12.5px;color:var(--muted);">MetaverseKG development for industrial digital twins</div>
+      </div>
+      <div class="card" style="text-align:center;padding:1.8rem;">
+        <div style="font-size:2rem;margin-bottom:10px;">🔬</div>
+        <div style="font-weight:600;color:var(--navy);margin-bottom:4px;">NSF &amp; NIH</div>
+        <div style="font-size:12.5px;color:var(--muted);">Federal funding for neuro-symbolic AI and healthcare AI research</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<style>
+  @media(max-width:760px){
+    .research-two-col { grid-template-columns:1fr !important; }
+    .research-two-col > div[style*="order:1"] { order:1 !important; }
+    .research-two-col > div[style*="order:2"] { order:2 !important; }
+  }
+</style>
+
+<script src="js/components.js"></script>
+<script> renderNav('Research'); renderFooter(); </script>
+</body>
+</html>
